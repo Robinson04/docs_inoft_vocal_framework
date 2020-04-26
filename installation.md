@@ -4,6 +4,8 @@
 
 Rendez-vous sur la page suivant, vous pouvez y trouver toutes les versions de Python  télécharger : [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
+![](.gitbook/assets/image%20%2813%29.png)
+
 Nous recommandons que vous téléchargiez la dernière version 3.7.X \(par exemple la 3.7.7 sur l'image\), et non une version 3.8, car le framework n'as pas été proprement tester dans les versions 3.8
 
 ### Installation du Framework

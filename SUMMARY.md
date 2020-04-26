@@ -13,4 +13,5 @@
 ## Conventions techniques
 
 * [Noms de classes](conventions-techniques/noms-de-classes.md)
+* [Réutilisation des mêmes choix](conventions-techniques/reutilisation-des-memes-choix.md)
 
