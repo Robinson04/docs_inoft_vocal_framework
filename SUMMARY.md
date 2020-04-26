@@ -6,7 +6,7 @@
 
 ## Concepts de base
 
-* [Gérer une requete \(InoftRequestHandler\)](concepts-de-base/gerer-une-requete.md)
+* [Create a Request \(InoftRequestHandler\)](concepts-de-base/gerer-une-requete.md)
 * [Gérer des choix multiples \(InoftStateHandler\)](concepts-de-base/gerer-des-choix-multiples-inoftstatehandler.md)
 * [Activation par invocation](concepts-de-base/activation-par-invocation.md)
 
