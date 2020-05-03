@@ -4,7 +4,7 @@
 * [Installation](installation.md)
 * [FAQ](faq.md)
 
-## Concepts de base
+## Concepts des assistants vocaux <a id="concepts-de-base"></a>
 
 * [Activation par invocation](concepts-de-base/activation-par-invocation.md)
 
