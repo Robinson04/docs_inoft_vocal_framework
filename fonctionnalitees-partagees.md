@@ -1,0 +1,2 @@
+# Fonctionnalitées partagées
+
