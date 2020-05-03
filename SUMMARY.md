@@ -8,6 +8,15 @@
 
 * [Activation par invocation](concepts-de-base/activation-par-invocation.md)
 
+## Plateformes
+
+* [Alexa](plateformes/alexa/README.md)
+  * [Commandes](plateformes/alexa/commandes/README.md)
+    * [Untitled](plateformes/alexa/commandes/untitled.md)
+* [Google Assistant](plateformes/google-assistant.md)
+* [Samsung Bixby](plateformes/samsung-bixby.md)
+* [SIRI](plateformes/siri.md)
+
 ## Classes et application
 
 * [Démarrage rapide](classes-et-application/demarrage-rapide.md)
@@ -18,24 +27,12 @@
 * [InoftCondition](classes-et-application/inoft-condition.md)
 * [InoftHandler](classes-et-application/inoft-handler.md)
 * [InoftHandlersGroup](classes-et-application/inofthandlersgroup.md)
+* [Fonctionnalitées partagées](fonctionnalitees-partagees.md)
+* [Réponses](reponses.md)
+* [Classes](classes.md)
 
 ## Conventions techniques
 
 * [Noms de classes](conventions-techniques/noms-de-classes.md)
 * [Réutilisation des mêmes choix](conventions-techniques/reutilisation-des-memes-choix.md)
-* [Untitled](untitled-2.md)
-* [Untitled](untitled-3.md)
-* [Untitled](untitled-1.md)
-* [Fonctionnalitées partagées](fonctionnalitees-partagees.md)
-* [Réponses](reponses.md)
-* [Classes](classes.md)
-* [Untitled](untitled.md)
-* [Untitltesed](untitltesed.md)
-
-## Plateformes
-
-* [Alexa](plateformes/alexa/README.md)
-  * [Commandes](plateformes/alexa/commandes/README.md)
-    * [Untitled](plateformes/alexa/commandes/untitled.md)
-* [Untitled](plateformes/untitled.md)
 
