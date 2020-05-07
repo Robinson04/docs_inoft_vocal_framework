@@ -1,10 +1,6 @@
----
-description: >-
-  InoftSkill(settings_yaml_filepath: Optional[str] = None,
-  settings_json_filepath: Optional[str] = None):
----
-
 # InoftSkill \(application\)
+
+InoftSkill\(settings\_yaml\_filepath: Optional\[str\] = None, settings\_json\_filepath: Optional\[str\] = None\):
 
 ## Fonctionnement
 
@@ -49,9 +45,41 @@ N'utiliser pas de chemin d'accès direct \(comme C:/Users/Rob/application/app\_s
 
 ## **Fonctions**
 
-### Hey !
+### add\_request\_handler
 
+Vous permet d'ajouter vos classes étant de type InoftRequestHandler une par une à votre application. Si vous n'ajoutez pas vos classes via cette fonctions, leurs fonctions can\_handle \(qui peut permettre leurs déclenchement\) ne seront pas vérifié, donc vos classes ne seront pas utilisé.
 
+```text
+skill.add_request_handler(LaunchRequestHandler)
+```
+
+{% hint style="info" %}
+Vos classes sont ajouté dans l'ordre à la même liste de classes. Une fois qu'une de vos classes à été déclenché via sa fonction can\_handle, l'InoftSkill n'iras pas vérifier les autres classes. Si vous avez plusieurs classes qui peuvent potentiellement être déclenché par le même événement, uniquement la classe ayant été ajouté le plus tôt sera utilisé pour fournir la réponse à l'utilisateur.
+{% endhint %}
+
+### add\_state\_handler
+
+Vous permet d'ajouter vos classes étant de type InoftStateHandler une par une à votre application. Quand vous utilisez la fonction self.memorize\_session\_then\_state\(NomDeClasse\) \(voir plus\). Alors, lors de la prochaine interaction de l'utilisateur, le framework vas chercher la classe StateHandler correspondante parmis tous les StateHandler que vous avez ajouté. Si la classe n'est pas trouvé, le framework vas essayer de trouver une classe RequestHandler pouvant gérer la requête, et si elle n'en trouve pas, elle utilisera la classe de DefaultFallback.
+
+```text
+skill.add_state_handler(LaunchStateHandler)
+```
+
+### set\_default\_fallback
+
+Vous permet de définir la classe qui répondra à votre utilisateur si aucune de vos autres classes n'ont été activé \(et donc n'ont pas créer de réponse\).
+
+{% hint style="danger" %}
+Définir une classe de DefaultFallback et l'ajouter est obligatoire. Si vous ne le faites pas, une erreur se produira quand vous lancerez l'application sur le cloud ou sur votre machine, elle vous informeras que vous n'avez pas défini de classe de DefaultFallback.
+{% endhint %}
+
+```text
+skill.set_default_fallback_handler(DefaultFallback)
+```
+
+{% hint style="info" %}
+Vous ne pouvez définir qu'une seule classe de DefaultFallback, si vous utilisez la fonction deux fois, vous remplacerez la première classe que vous avez défini.
+{% endhint %}
 
 ## Usage
 
@@ -106,4 +134,8 @@ def lambda_handler(event, context):
     # L'InoftSkill vas traiter l'event (la requête de l'utilisateur)
     # et retourner son résultat (la réponse de l'application) comme résultat.
 ```
+
+{% hint style="info" %}
+Vous pouvez nommer la variable contenant l'objet InoftSkill comme vous le souhaitez. Cependant les conventions du framework recommandent de l'appeler "skill" ou "skill\_builder".
+{% endhint %}
 
