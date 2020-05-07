@@ -20,7 +20,7 @@
 ## Classes et application
 
 * [Démarrage rapide](classes-et-application/demarrage-rapide.md)
-* [InoftSkill \(application\)](classes-et-application/inoftskill-application.md)
+* [InoftSkill \(application\)](classes-et-application/inoft-skill.md)
 * [InoftRequestHandler](classes-et-application/inoft-request-handler.md)
 * [InoftStateHandler](classes-et-application/inoft-state-handler.md)
 * [InoftDefaultFallback](classes-et-application/inoftdefaultfallback.md)
