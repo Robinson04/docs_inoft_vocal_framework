@@ -1,6 +1,6 @@
 # InoftSkill \(application\)
 
-InoftSkill\(settings\_yaml\_filepath: Optional\[str\] = None, settings\_json\_filepath: Optional\[str\] = None\):
+**InoftSkill\(settings\_yaml\_filepath: Optional\[str\] = None, settings\_json\_filepath: Optional\[str\] = None\):**
 
 ## Fonctionnement
 
