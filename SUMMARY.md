@@ -12,6 +12,7 @@
 
 * [Alexa](plateformes/alexa/README.md)
   * [Elements visuels](plateformes/alexa/elements-visuels/README.md)
+    * [Conditions d'hébergements d'images](plateformes/alexa/elements-visuels/conditions-dhebergements-dimages.md)
     * [Carte Basique](plateformes/alexa/elements-visuels/carte-basique.md)
   * [Fonctions](plateformes/alexa/fonctions/README.md)
     * [Untitled](plateformes/alexa/fonctions/untitled.md)
