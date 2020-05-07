@@ -20,7 +20,7 @@ Vous permet de spécifier directement le fichier de configuration \(en format .y
 
 Example :
 
-```text
+```python
 from inoft_vocal_framework import InoftSkill
 import os
 
@@ -49,7 +49,7 @@ N'utiliser pas de chemin d'accès direct \(comme C:/Users/Rob/application/app\_s
 
 Vous permet d'ajouter vos classes étant de type InoftRequestHandler une par une à votre application. Si vous n'ajoutez pas vos classes via cette fonctions, leurs fonctions can\_handle \(qui peut permettre leurs déclenchement\) ne seront pas vérifié, donc vos classes ne seront pas utilisé.
 
-```text
+```python
 skill.add_request_handler(LaunchRequestHandler)
 ```
 
@@ -73,7 +73,7 @@ Vous permet de définir la classe qui répondra à votre utilisateur si aucune d
 Définir une classe de DefaultFallback et l'ajouter est obligatoire. Si vous ne le faites pas, une erreur se produira quand vous lancerez l'application sur le cloud ou sur votre machine, elle vous informeras que vous n'avez pas défini de classe de DefaultFallback.
 {% endhint %}
 
-```text
+```python
 skill.set_default_fallback_handler(DefaultFallback)
 ```
 
@@ -83,9 +83,8 @@ Vous ne pouvez définir qu'une seule classe de DefaultFallback, si vous utilisez
 
 ## Usage
 
-```text
-# Nom de fichier : app.py
-
+{% code title="app.py" %}
+```python
 from inoft_vocal_framework import InoftSkill, \
     InoftRequestHandler, InoftStateHandler, InoftDefaultFallback
 
@@ -134,6 +133,7 @@ def lambda_handler(event, context):
     # L'InoftSkill vas traiter l'event (la requête de l'utilisateur)
     # et retourner son résultat (la réponse de l'application) comme résultat.
 ```
+{% endcode %}
 
 {% hint style="info" %}
 Vous pouvez nommer la variable contenant l'objet InoftSkill comme vous le souhaitez. Cependant les conventions du framework recommandent de l'appeler "skill" ou "skill\_builder".

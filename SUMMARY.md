@@ -11,8 +11,10 @@
 ## Plateformes
 
 * [Alexa](plateformes/alexa/README.md)
-  * [Commandes](plateformes/alexa/commandes/README.md)
-    * [Untitled](plateformes/alexa/commandes/untitled.md)
+  * [Elements visuels](plateformes/alexa/elements-visuels/README.md)
+    * [Carte Basique](plateformes/alexa/elements-visuels/carte-basique.md)
+  * [Fonctions](plateformes/alexa/fonctions/README.md)
+    * [Untitled](plateformes/alexa/fonctions/untitled.md)
 * [Google Assistant](plateformes/google-assistant.md)
 * [Samsung Bixby](plateformes/samsung-bixby.md)
 * [SIRI](plateformes/siri.md)
