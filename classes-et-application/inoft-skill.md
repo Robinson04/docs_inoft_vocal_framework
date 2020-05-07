@@ -16,6 +16,8 @@ Si vous avez plusieurs fichiers dans multiples dossier, la recherche de votre fi
 
 ### **settings\_yaml\_filepath**
 
+_Optionnel \| Attends une valeur de type str \(texte\)_
+
 Vous permet de spécifier directement le fichier de configuration \(en format .yaml\) de votre application. Il n'est pas recommandé de l'utiliser, mais vous en aurez besoin si vous voulez que votre fichier de configuration ne soit pas dans le même dossier que votre principale fichier de code \(celui où l'objet InoftSkill est initialisé\)
 
 Example :
@@ -37,10 +39,16 @@ skill = InoftSkill(settings_yaml_filepath=os.path.join(
 
 ### **settings\_json\_filepath**
 
+_Optionnel \| Attends une valeur de type str \(texte\)_
+
 Exactement pareil que l'argument settings\_yaml\_filepath, mais à utiliser si votre fichier de configuration est en format .json et non .yaml
 
 {% hint style="danger" %}
 N'utiliser pas de chemin d'accès direct \(comme C:/Users/Rob/application/app\_settings.yaml\) Cela fonctionnera sur votre machine, cependant ne fonctionneras pas une fois déployé dans le cloud, étant donné que les chemins d'accès seront différents. Pour que cela fonctionne sur votre machine et dans le cloud, basé sur vous sur le chemin d'accès de votre fichier de code principale que vous pouvez avoir avec : os.path.dirname\(os.path.abspath\(\_\_file\_\_\)\)
+{% endhint %}
+
+{% hint style="warning" %}
+Vous ne pouvez pas définir à la fois l'argument settings\_yaml\_filepath et settings\_json\_filepath
 {% endhint %}
 
 ## **Fonctions**
