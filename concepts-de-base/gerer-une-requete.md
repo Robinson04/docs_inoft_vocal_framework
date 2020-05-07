@@ -1,4 +1,4 @@
-# Gérer une requete \(InoftRequestHandler\)
+# Create a Request \(InoftRequestHandler\)
 
 Pour gérer une requête de l'utilisateur, le framework dispose de la classe InoftRequestHandler. Une classe gérant le lancement de l'application se présenterait de cette façon :
 
