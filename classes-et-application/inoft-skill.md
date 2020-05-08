@@ -20,7 +20,7 @@ _Optionnel \| Attends une valeur de type str \(texte\)_
 
 Vous permet de spécifier directement le fichier de configuration \(en format .yaml\) de votre application. Il n'est pas recommandé de l'utiliser, mais vous en aurez besoin si vous voulez que votre fichier de configuration ne soit pas dans le même dossier que votre principale fichier de code \(celui où l'objet InoftSkill est initialisé\)
 
-Example :
+Exemple :
 
 ```python
 from inoft_vocal_framework import InoftSkill
@@ -118,6 +118,7 @@ class LaunchStateHandler(InoftStateHandler):
         self.end_session()
         return self.to_plateform_dict()
 
+# Une classe de DefaultFallback est obligatoire dans toutes applications
 class DefaultFallback(InoftDefaultFallback):
     def handle(self):
         self.say("J'ai pas compris mon ami !")

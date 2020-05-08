@@ -32,6 +32,7 @@
 ## Classes et application
 
 * [Démarrage rapide](classes-et-application/demarrage-rapide.md)
+* [Résumé de toutes les classes](classes-et-application/resume-de-toutes-les-classes.md)
 * [InoftSkill \(application\)](classes-et-application/inoft-skill.md)
 * [InoftRequestHandler](classes-et-application/inoft-request-handler.md)
 * [InoftStateHandler](classes-et-application/inoft-state-handler.md)

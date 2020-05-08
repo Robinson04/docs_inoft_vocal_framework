@@ -85,6 +85,7 @@ class LaunchRequestHandler(InoftRequestHandler):
         # respecte les conditions d'hébergement d'images d'Alexa)
         return self.to_platform_dict()
 
+# Une classe de DefaultFallback est obligatoire dans toutes applications
 class DefaultFallback(InoftDefaultFallback):
     def handle(self):
         self.say("J'ai pas compris mon ami !")
