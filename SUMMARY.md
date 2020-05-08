@@ -8,6 +8,15 @@
 
 * [Activation par invocation](concepts-de-base/activation-par-invocation.md)
 
+## Fonctions partagés
+
+* [Synthèse vocal basique](fonctions-partages/synthese-vocal-basique.md)
+* [Réponses avancées & SSML](fonctions-partages/reponses-avancees-and-ssml/README.md)
+  * [SpeechsList](fonctions-partages/reponses-avancees-and-ssml/speechslist.md)
+  * [Speech](fonctions-partages/reponses-avancees-and-ssml/speech.md)
+* [Montage audio dynamique](fonctions-partages/montage-audio-dynamique.md)
+* [Réponses](fonctions-partages/reponses.md)
+
 ## Plateformes
 
 * [Alexa](plateformes/alexa/README.md)

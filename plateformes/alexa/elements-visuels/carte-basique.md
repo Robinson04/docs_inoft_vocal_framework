@@ -95,6 +95,13 @@ def lambda_handler(event, context):
     skill.add_request_handler(LaunchRequestHandler)
     skill.set_default_fallback_handler(DefaultFallback)
     return skill.handle_any_platform(event=event, context=context)
+    
+# Uniquement si le fichier est lancer depuis une machine local (et non sur
+# le cloud). L'application sera lancé en simulant le lancement d'un skill Alexa.
+if __name__ == "__main__":
+    from inoft_vocal_framework import Simulator
+    event_, context_ = Simulator(event_type="alexa/start").get_event_and_context()
+    print(f"\n\nFinal Output : {lambda_handler(event=event_, context=context_)}")
 ```
 {% endcode %}
 

@@ -109,7 +109,7 @@ class LaunchStateHandler(InoftStateHandler):
     def handle(self):
         if self.is_in_intent_names(["Yes"]):
             self.say("Ca me fait plaisir ! Je te souhaite la meilleur des journées !")
-        elif self.is_in_intent_names(["No"])
+        elif self.is_in_intent_names(["No"]):
             self.say("Mince, ne t'inquiète pas, je te garanti que ta journée vas être excellente ! ")
         else:
             self.say("Je n'ai pas très bien compris. Peut-être une autre fois ?")    
@@ -140,6 +140,13 @@ def lambda_handler(event, context):
     return skill.handle_any_platform(event=event, context=context)
     # L'InoftSkill vas traiter l'event (la requête de l'utilisateur)
     # et retourner son résultat (la réponse de l'application) comme résultat.
+    
+# Uniquement si le fichier est lancer depuis une machine local (et non sur
+# le cloud). L'application sera lancé en simulant le lancement d'un skill Alexa.
+if __name__ == "__main__":
+    from inoft_vocal_framework import Simulator
+    event_, context_ = Simulator(event_type="alexa/start").get_event_and_context()
+    print(f"\n\nFinal Output : {lambda_handler(event=event_, context=context_)}")
 ```
 {% endcode %}
 
