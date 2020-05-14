@@ -1,5 +1,5 @@
 ---
-description: Créer des applications avancées de toutes tailles sur les assistants vocaux
+description: Créer des applications et jeux sur assistants vocaux
 ---
 
 # Introduction

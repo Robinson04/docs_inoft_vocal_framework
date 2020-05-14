@@ -42,6 +42,8 @@ self.say("Bien le bonjour l'ami !")
 
 #### Résultat de l'exemple cross-platform sur le simulateur d'Alexa
 
+&lt;video controls="controls" preload="metadata" poster="https://www.parmafenetre.fr/IMG/jpg/2020\_window\_souvenirs\_d\_enfance.jpg"&gt;&lt;source src="https://www.parmafenetre.fr/IMG/mp4/2020\_window\_souvenirs\_d\_enfance.mp4" type="video/mp4" /&gt;&lt;/video&gt;
+
 {% embed url="https://www.youtube.com/watch?v=dvSuPmGreFw" %}
 
 #### Résultat de l'exemple cross-platform sur le simulateur de Google Assistants
