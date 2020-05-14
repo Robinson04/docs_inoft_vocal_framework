@@ -10,6 +10,8 @@
 
 ## Fonctions partagés
 
+* [Recevoir une requête](fonctions-partages/recevoir-une-requete.md)
+* [Etat à choix multiples](fonctions-partages/etat-a-choix-multiples.md)
 * [Synthèse vocal basique](fonctions-partages/synthese-vocal-basique.md)
 * [Réponses avancées & SSML](fonctions-partages/reponses-avancees-and-ssml/README.md)
   * [SpeechsList](fonctions-partages/reponses-avancees-and-ssml/speechslist.md)

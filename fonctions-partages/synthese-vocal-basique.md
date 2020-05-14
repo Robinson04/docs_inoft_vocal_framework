@@ -2,7 +2,7 @@
 
 Pour générer la réponse à renvoyer à votre utilisateur, il est fréquent d'utiliser de la synthèse vocal basique. C'est à dire, où **vous avez besoin d'uniquement fournir un texte pour qu'il soit synthétisé en prenant la voix de la plateforme sur laquelle est l'utilisateur** \(si l'utilisateur est sur Alexa, votre texte sera synthétisé avec la voix d'Alexa. Sur Google Assistant, avec la voix que vous avez définis pour votre application, etc\).
 
-Pour cela vous utiliserez la fonction self.say\(\) pour répondre la même chose peu importe la plateforme, et 
+Pour cela vous utiliserez la fonction `self.say()` pour répondre la même chose peu importe la plateforme, et 
 
 {% hint style="warning" %}
 Vous ne pouvez utiliser les fonctions des synthèses, uniquement si votre code est à l'intérieur d'une classe des classes pour créer des réponses dans votre application. [Voir toutes les classes](../classes-et-application/resume-de-toutes-les-classes.md)
@@ -12,15 +12,15 @@ Vous ne pouvez utiliser les fonctions des synthèses, uniquement si votre code e
 
 ### Additionner plusieurs textes
 
-
+Si vous utiliser la fonction `self.say` plusieurs fois \(ou `self.say` cross-platform suivi de la même fonction spécifique à une plateforme comme `self.alexa.say`\). Vos différents messages seront mise bout à bout, à la place qu'uniquement le dernier message soit conservé.
 
 ## Synthèse cross-plateforme
 
-#### **self.say\(text\_or\_ssml: str\)**
+#### **`self.say(text_or_ssml: str)`**
 
 ### Fonctionnement
 
-Si vous voulez que votre application aille répondre vocalement à votre utilisateur avec le message sur toutes les plateformes, vous utiliserez la fonction **self.say\("Votre texte"\)**
+Si vous voulez que votre application aille répondre vocalement à votre utilisateur avec le message sur toutes les plateformes, vous utiliserez la fonction **`self.say("Votre texte")`**
 
 **La voix de synthèse qui sera utilisé seras celle de la plateforme actuel sur laquelle l'utilisateur interagit avec votre application**, et optionnellement pour Google Assistant la voix que vous avez choisi d'utiliser pour votre application dans la console de développement.
 
@@ -41,8 +41,6 @@ self.say("Bien le bonjour l'ami !")
 ```
 
 #### Résultat de l'exemple cross-platform sur le simulateur d'Alexa
-
-&lt;video controls="controls" preload="metadata" poster="https://www.parmafenetre.fr/IMG/jpg/2020\_window\_souvenirs\_d\_enfance.jpg"&gt;&lt;source src="https://www.parmafenetre.fr/IMG/mp4/2020\_window\_souvenirs\_d\_enfance.mp4" type="video/mp4" /&gt;&lt;/video&gt;
 
 {% embed url="https://www.youtube.com/watch?v=dvSuPmGreFw" %}
 
@@ -92,7 +90,7 @@ _Pour déployer ce code et le lier à une application sur assistants vocaux, veu
 
 ### Fonctionnement
 
-Si vous souhaitez avoir une réponse différente en fonction de la plateforme, vous pouvez accéder à la fonction say de manière spécifique à chaque plateforme à la place d'y accéder en cross-plateforme. A la place  
+Si vous souhaitez avoir une réponse différente en fonction de la plateforme, vous pouvez accéder à la fonction `say` de manière spécifique à chaque plateforme à la place d'y accéder en cross-plateforme. A la place  d'y accéder via le classique `self.say`, accédez-y via `self.alexa.say`, `self.google.say`, ou `self.bixby.say`. Dès que vous accéder à une fonction via non pas directement via le terme self, mais via le terme self suivi du nom de la plateforme, soit vous utilisez une fonctionnalité spécifique à la plateforme, qui ne seras pas utiliser sur l'autre. Soit vous définissez un comportement spécifique pour votre application en fonction d'avec quel plateforme votre utilisateur utilise.
 
 ### Example
 
